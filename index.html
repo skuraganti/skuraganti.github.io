@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sashank Kuraganti · Senior Data Engineer</title>
+<meta name="description" content="Sashank Kuraganti is a senior data engineer in Santa Clara, California, building data pipelines and lakehouse systems with Python, SQL and PySpark. Experience, skills and seven independent projects.">
+<link rel="canonical" href="https://skuraganti.github.io/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131417" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sashank Kuraganti · Senior Data Engineer">
+<meta property="og:description" content="Data pipelines and lakehouse systems, plus seven independent projects on data quality, retrieval and evaluation.">
+<meta property="og:url" content="https://skuraganti.github.io/">
+<meta property="og:image" content="https://skuraganti.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sashank Kuraganti, Senior Data Engineer. Sources, quality checks, serving.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Apply a saved theme before first paint. Without a saved choice the page follows the system.
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<script src="script.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="Sashank Kuraganti, back to top">
+      <img src="assets/monogram.svg" alt="" width="32" height="32">
+      <span>Sashank Kuraganti</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+      <span class="theme-icon" aria-hidden="true"></span><span class="theme-label">Dark theme</span>
+    </button>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <p class="eyebrow">Senior Data Engineer · Santa Clara, California</p>
+      <h1 id="hero-title">Sashank Kuraganti</h1>
+      <p class="lede">I build data pipelines and lakehouse systems with a clear path from raw data to the checks behind each result.</p>
+      <p class="hero-links">
+        <a class="btn btn-primary" href="#work">See selected work</a>
+        <a class="btn" href="https://github.com/skuraganti">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/sashank-k-26aaa4173/">LinkedIn</a>
+      </p>
+    </div>
+
+    <figure class="flow" aria-labelledby="flow-cap">
+      <ol class="flow-steps">
+        <li class="flow-step">
+          <span class="flow-tag">01 · Source</span>
+          <strong>Land it as received</strong>
+          <span>Files, APIs and streams, kept raw and replayable.</span>
+        </li>
+        <li class="flow-step">
+          <span class="flow-tag">02 · Quality</span>
+          <strong>Check before trusting</strong>
+          <span>Schema, freshness and duplicate checks. Failing rows go to quarantine instead of disappearing.</span>
+          <span class="flow-branch">quarantine → review</span>
+        </li>
+        <li class="flow-step">
+          <span class="flow-tag">03 · Service</span>
+          <strong>Serve what passed</strong>
+          <span>Tables, search and dashboards with lineage back to the source.</span>
+        </li>
+      </ol>
+      <figcaption id="flow-cap"><span class="dot" aria-hidden="true"></span>How I approach a pipeline.</figcaption>
+    </figure>
+  </section>
+
+  <section class="band wrap" id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title"><span class="num" aria-hidden="true">§1</span> About</h2>
+    <div class="prose">
+      <p>My work spans software, manufacturing, financial services and commerce. I use Python, SQL and PySpark most.</p>
+      <p>I care about data you can trace back to where it came from, and monitoring that tells you something useful. I also want to know where a system can fail.</p>
+      <p>The independent projects below take on the same problems with public data. They're personal work, separate from any employer, and the results are there for you to inspect.</p>
+    </div>
+  </section>
+
+  <section class="band wrap" id="work" aria-labelledby="work-title">
+    <div class="work-head">
+      <h2 id="work-title" class="section-title"><span class="num" aria-hidden="true">§2</span> Selected work</h2>
+      <p class="work-note">Seven independent projects. Try a browser demo, or run the full app from its source. The apps run locally; optional model features may use a remote service.</p>
+    </div>
+
+    <div class="filter" role="group" aria-label="Filter projects" hidden>
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="data" aria-pressed="false">Data</button>
+      <button type="button" data-filter="ai" aria-pressed="false">AI</button>
+      <p class="filter-count" role="status" aria-live="polite">Showing 7 of 7 projects</p>
+    </div>
+    <p class="filter-empty" hidden>No projects match this filter. <button type="button" data-filter="all" class="linklike">Show all projects</button></p>
+
+    <h3 class="group-title" data-group="featured">Featured</h3>
+    <ol class="featured" data-group-list="featured">
+
+      <li class="project feature" data-cat="data" id="relay">
+        <div class="feature-text">
+          <p class="kind">Data pipeline · <span class="slug">data-pipeline-monitor</span></p>
+          <h4>Relay</h4>
+          <p class="summary">Scheduled, bounded ingestion of NYC TLC trip data with a quality quarantine, lineage and checkpoint retry.</p>
+          <dl class="facts">
+            <div><dt>Source rows</dt><dd>56,551</dd></div>
+            <div><dt>Accepted</dt><dd>56,549</dd></div>
+            <div><dt>Quarantined</dt><dd>2</dd></div>
+            <div><dt>Warning rows</dt><dd>6,640</dd></div>
+          </dl>
+          <p class="stack">Python · SQLite</p>
+          <details>
+            <summary>Case study</summary>
+            <div class="details-body">
+              <p>Relay schedules ingestion of a pinned TLC monthly file and taxi-zone lookup. Invalid rows are quarantined with a reason; accepted rows retain lineage back to the source. An unchanged file is a no-op.</p>
+              <p>I checked recovery from a saved checkpoint at row 5,000, so a failed run resumes instead of starting over.</p>
+              <p><strong>What the demo is:</strong> the Pages version simulates the queue and retries in the browser over the real aggregates. The full backend runs locally.</p>
+            </div>
+          </details>
+          <p class="links"><a href="https://skuraganti.github.io/data-pipeline-monitor/">Demo<span class="vh"> of Relay</span></a><a href="https://github.com/skuraganti/data-pipeline-monitor">Source<span class="vh"> for Relay</span></a></p>
+        </div>
+        <figure class="shot">
+          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span><em>skuraganti.github.io/data-pipeline-monitor</em></div>
+          <img src="assets/relay-demo.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Relay demo page showing source quality for the actual fixture: 56,549 accepted rows, 2 rejected, 6,640 warning rows and 56,551 source rows, next to lineage and the pinned source link.">
+        </figure>
+      </li>
+
+      <li class="project feature flip" data-cat="ai" id="folio">
+        <div class="feature-text">
+          <p class="kind">Retrieval · <span class="slug">private-ai-knowledge-engine</span></p>
+          <h4>Folio</h4>
+          <p class="summary">Document search with lexical, latent and hybrid retrieval, citation checks, and incremental updates and deletion. Evaluated on NIST documents.</p>
+          <dl class="facts">
+            <div><dt>Lexical Hit@5</dt><dd>20/24</dd></div>
+            <div><dt>Hybrid Hit@5</dt><dd>19/24</dd></div>
+            <div><dt>Latent Hit@5</dt><dd>17/24</dd></div>
+          </dl>
+          <p class="stack">Python · SQLite FTS5</p>
+          <details>
+            <summary>Case study</summary>
+            <div class="details-body">
+              <p>Answers cite the passages they came from, and citations are validated against the indexed text. Updating or deleting a document changes the index incrementally.</p>
+              <p>For 24 frozen questions, the top five matches included the labeled source page for 20 using lexical search, 19 using hybrid search and 17 using latent search. This small retrieval test measures where a passage was found, not answer quality.</p>
+              <p><strong>What the demo is:</strong> the Pages version runs lexical, extractive search over three documents and makes no new model calls. The full backend runs locally, and the model is optional.</p>
+            </div>
+          </details>
+          <p class="links"><a href="https://skuraganti.github.io/private-ai-knowledge-engine/">Demo<span class="vh"> of Folio</span></a><a href="https://github.com/skuraganti/private-ai-knowledge-engine">Source<span class="vh"> for Folio</span></a></p>
+        </div>
+        <figure class="shot">
+          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span><em>skuraganti.github.io/private-ai-knowledge-engine</em></div>
+          <img src="assets/folio-demo.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Folio demo page titled Find the passage, showing an extractive answer from NIST documents in the browser.">
+        </figure>
+      </li>
+
+      <li class="project feature" data-cat="ai" id="contour">
+        <div class="feature-text">
+          <p class="kind">Code analysis · <span class="slug">ai-codebase-explorer</span></p>
+          <h4>Contour</h4>
+          <p class="summary">Parses Python and TypeScript, builds dependency graphs for Flask and Zod, and explains code with links back to the source lines.</p>
+          <p class="stack">Python · TypeScript</p>
+          <details>
+            <summary>Case study</summary>
+            <div class="details-body">
+              <p>Contour estimates change impact from the dependency graph. It reads static imports, not runtime calls, so its impact view is a starting point and not a complete answer.</p>
+              <p>It never executes the code it analyzes.</p>
+              <p><strong>What the demo is:</strong> the Pages version searches saved parsed output. The full backend runs locally.</p>
+            </div>
+          </details>
+          <p class="links"><a href="https://skuraganti.github.io/ai-codebase-explorer/">Demo<span class="vh"> of Contour</span></a><a href="https://github.com/skuraganti/ai-codebase-explorer">Source<span class="vh"> for Contour</span></a></p>
+        </div>
+        <figure class="shot">
+          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span><em>skuraganti.github.io/ai-codebase-explorer</em></div>
+          <img src="assets/contour-demo.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Contour demo page titled Trace the dependency, showing a search over saved parsed output and an architecture map.">
+        </figure>
+      </li>
+    </ol>
+
+    <h3 class="group-title" data-group="more">More projects</h3>
+    <ol class="more" data-group-list="more">
+
+      <li class="project row" data-cat="data" id="ledger">
+        <p class="kind">Data · <span class="slug">personal-spending-tracker</span></p>
+        <h4>Ledger</h4>
+        <p class="summary">Personal spending from CSV imports, with deterministic categories, recurring-payment candidates and budgets. No bank integration.</p>
+        <p class="stack">Python · SQLite</p>
+        <details>
+          <summary>Case study</summary>
+          <div class="details-body">
+            <p>The practical lesson: imports need to be atomic, and duplicates need deliberate handling.</p>
+            <p>Locally I tested a 6,567-row research import from MoneyVis. It isn't redistributed because its standalone license is unresolved.</p>
+            <p><strong>What the demo is:</strong> the Pages version uses a synthetic 32-row fixture.</p>
+          </div>
+        </details>
+        <p class="links"><a href="https://skuraganti.github.io/personal-spending-tracker/">Demo<span class="vh"> of Ledger</span></a><a href="https://github.com/skuraganti/personal-spending-tracker">Source<span class="vh"> for Ledger</span></a></p>
+      </li>
+
+      <li class="project row" data-cat="data" id="fieldglass">
+        <p class="kind">Data · <span class="slug">live-earth-dashboard</span></p>
+        <h4>Fieldglass</h4>
+        <p class="summary">Ingests USGS and NWS data with deduplication, freshness tracking, watch-radius alerts and map playback.</p>
+        <p class="stack">Python · SQLite · Leaflet</p>
+        <details>
+          <summary>Case study</summary>
+          <div class="details-body">
+            <p>The ingestion uses the actual USGS and NWS sources. Repeated records are deduplicated, and each source shows how fresh its data is.</p>
+            <p><strong>What the demo is:</strong> the Pages version is a captured snapshot. It isn't a live feed, and it isn't a reconstruction of what was known at a past moment.</p>
+          </div>
+        </details>
+        <p class="links"><a href="https://skuraganti.github.io/live-earth-dashboard/">Demo<span class="vh"> of Fieldglass</span></a><a href="https://github.com/skuraganti/live-earth-dashboard">Source<span class="vh"> for Fieldglass</span></a></p>
+      </li>
+
+      <li class="project row" data-cat="ai" id="tracelab">
+        <p class="kind">AI evaluation · <span class="slug">ai-agent-evaluation-lab</span></p>
+        <h4>TraceLab</h4>
+        <p class="summary">Tool-planning benchmarks derived from BFCL, with immutable trace checks, replays and synthetic fault probes.</p>
+        <p class="stack">Python</p>
+        <details>
+          <summary>Case study</summary>
+          <div class="details-body">
+            <p>An offline run was repeated three times. Each repeat gave 3 successes, 20 refusals and 2 wrong answers out of 25.</p>
+            <p>Eight saved model plans are shown separately, with one run per task and policy. That sample is too small to establish a policy winner. These are local planning scores rather than official BFCL results.</p>
+            <p><strong>What the demo is:</strong> the Pages version makes no model or tool calls. Its receipts are simulated.</p>
+          </div>
+        </details>
+        <p class="links"><a href="https://skuraganti.github.io/ai-agent-evaluation-lab/">Demo<span class="vh"> of TraceLab</span></a><a href="https://github.com/skuraganti/ai-agent-evaluation-lab">Source<span class="vh"> for TraceLab</span></a></p>
+      </li>
+
+      <li class="project row" data-cat="ai" id="faultline">
+        <p class="kind">AI operations · <span class="slug">ai-incident-investigator</span></p>
+        <h4>Faultline</h4>
+        <p class="summary">Injects failures into a sandbox, measures HTTP, logs and spans, then writes cautious, cited hypotheses and repair proposals for a person to review.</p>
+        <p class="stack">Python</p>
+        <details>
+          <summary>Case study</summary>
+          <div class="details-body">
+            <p>Repair proposals are text only and can't be executed. Two of seven planned study conditions produced validated diagnoses. Six reached the model; one failed before inference. These sandbox results do not measure production accuracy.</p>
+            <p>The local record keeps a mixed slow capture and a failed second capture rather than hiding them.</p>
+            <p><strong>What the demo is:</strong> the Pages version replays recorded results only and runs no inference.</p>
+          </div>
+        </details>
+        <p class="links"><a href="https://skuraganti.github.io/ai-incident-investigator/">Demo<span class="vh"> of Faultline</span></a><a href="https://github.com/skuraganti/ai-incident-investigator">Source<span class="vh"> for Faultline</span></a></p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band wrap" id="skills" aria-labelledby="skills-title">
+    <h2 id="skills-title" class="section-title"><span class="num" aria-hidden="true">§3</span> Skills</h2>
+    <div class="skills">
+      <div><h3>Languages and processing</h3><p>Python, SQL, PySpark, Spark SQL</p></div>
+      <div><h3>Lakehouse</h3><p>Databricks, Delta Lake, Delta Live Tables, Unity Catalog</p></div>
+      <div><h3>Azure</h3><p>Azure Data Factory, ADLS Gen2, Event Hubs, Azure Monitor</p></div>
+      <div><h3>AWS</h3><p>S3, Glue, Kinesis, Redshift</p></div>
+      <div><h3>Orchestration and quality</h3><p>Kafka, Airflow, dbt, Great Expectations</p></div>
+      <div><h3>Retrieval (RAG)</h3><p>Chunking, embeddings, vector indexing, retrieval evaluation</p></div>
+      <div><h3>Observability</h3><p>Prometheus, Grafana, ClickHouse</p></div>
+      <div><h3>Delivery</h3><p>Git, Docker, CI/CD</p></div>
+    </div>
+  </section>
+
+  <section class="band wrap" id="experience" aria-labelledby="exp-title">
+    <h2 id="exp-title" class="section-title"><span class="num" aria-hidden="true">§4</span> Experience</h2>
+    <ol class="timeline">
+      <li>
+        <p class="when"><time datetime="2026-01">Jan 2026</time> – Present</p>
+        <div>
+          <h3>Senior Data Engineer <span class="org">Quest Software</span></h3>
+          <p>I build Azure Databricks and Delta Lake pipelines for internal product data, organized in Bronze, Silver and Gold layers. Unity Catalog handles access and lineage. Great Expectations and PySpark checks, along with SLA monitoring, keep an eye on the data.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when"><time datetime="2025-02">Feb 2025</time> – <time datetime="2025-12">Dec 2025</time></p>
+        <div>
+          <h3>Senior Data Engineer <span class="org">Applied Materials</span></h3>
+          <p>Built Python and PySpark ingestion for sensor telemetry from 5,000+ sensor streams, processing JSON into Parquet on Databricks and S3. Prepared equipment logs for RAG: sensitive fields removed, then embeddings, vector indexing, retrieval traces and evaluation. Also worked with Delta Live Tables, ClickHouse, Prometheus and Grafana.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when"><time datetime="2024-03">Mar 2024</time> – <time datetime="2025-01">Jan 2025</time></p>
+        <div>
+          <h3>Data Engineer <span class="org">Morgan Stanley</span></h3>
+          <p>Built ingestion for 15+ risk feeds with Azure Data Factory, ADLS Gen2 and Databricks, plus PySpark and SQL transformations. Added dbt tests and SCD Type 2 history, working with Key Vault, RBAC and CI/CD.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when"><time datetime="2020-01">Jan 2020</time> – <time datetime="2022-12">Dec 2022</time></p>
+        <div>
+          <h3>Data Engineer <span class="org">Flipkart</span></h3>
+          <p>Built ETL and Kafka and Kinesis ingestion for orders, products and clickstream. Orchestrated jobs in Airflow, tuned Redshift and prepared datasets for Tableau and Power BI.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band wrap" id="education" aria-labelledby="edu-title">
+    <h2 id="edu-title" class="section-title"><span class="num" aria-hidden="true">§5</span> Education</h2>
+    <ul class="edu">
+      <li><h3>Master of Science in Data Science</h3><p>University of Central Oklahoma · <time datetime="2024-05">May 2024</time></p></li>
+      <li><h3>Bachelor of Science in Business Analytics</h3><p>Manipal University · <time datetime="2020-04">April 2020</time></p></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="section-title"><span class="num" aria-hidden="true">§6</span> Contact</h2>
+    <article class="card" aria-labelledby="card-name">
+      <p class="card-ref">Directory · Contact</p>
+      <h3 id="card-name">Sashank Kuraganti</h3>
+      <p class="card-role">Senior Data Engineer · Santa Clara, California</p>
+      <ul class="card-rows">
+        <li><a href="https://www.linkedin.com/in/sashank-k-26aaa4173/"><span class="row-label">LinkedIn</span><span class="row-value">linkedin.com/in/sashank-k-26aaa4173</span></a></li>
+        <li><a href="https://github.com/skuraganti"><span class="row-label">GitHub</span><span class="row-value">github.com/skuraganti</span></a></li>
+        <li><a href="mailto:sashankkuraganti99@gmail.com"><span class="row-label">Email</span><span class="row-value">sashankkuraganti99@gmail.com</span></a></li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+<footer class="site-foot wrap">
+  <p>© Sashank Kuraganti. All rights reserved. </p>
+  <p><a href="#top">Back to top</a></p>
+</footer>
+</body>
+</html>

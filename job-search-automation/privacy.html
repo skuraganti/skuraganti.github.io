@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="Data practices for the owner-operated Job Search Gmail Automation workspace.">
+  <title>Privacy Notice | Job Search Gmail Automation</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header><div><a href="./">Job Search Gmail Automation</a></div></header>
+  <main>
+    <h1>Privacy notice</h1>
+    <p class="meta">Current owner-operated deployment. Updated October 19, 2026.</p>
+    <h2>Information processed</h2>
+    <p>The application processes the owner's profile, uploaded resume and optional experience library, job listings, generated application materials, outreach contacts and information entered into its AI assistant.</p>
+    <p>Google sign-in supplies a verified account email for dashboard access. The separate Gmail connection reads the connected mailbox identity, creates and checks drafts, and reads message identifiers, headers and short snippets from tracked outreach threads for reply classification and suppression. Drafts can contain recipient addresses, generated message text and resume attachments. Reusable Gmail helpers can also list drafts or retrieve a draft's contents.</p>
+    <p>The optional Drive connection reads the connected account identity and app-managed file metadata and permissions. It uploads resume PDFs and downloads uploaded copies to verify their integrity.</p>
+    <h2>Storage and service providers</h2>
+    <p>Application records and documents are stored in the operator-managed PostgreSQL database. Created drafts remain in Gmail; optional resume backups remain in Google Drive. OAuth credentials are held in Google Cloud Secret Manager and private operator credential files. Temporary document files, operational logs and service backups may also exist.</p>
+    <p>Uploaded profile and resume information, experience evidence, job context, assistant questions and conversation history may be sent through the configured OmniRoute gateway to its configured AI providers to produce requested materials. The current reply classifier uses application rules; it does not automatically send incoming Gmail reply headers or snippets to AI models. Text the owner pastes into the AI assistant is included in AI processing.</p>
+    <p>Google and configured infrastructure and AI providers process information under their applicable service terms. This notice does not promise zero retention, a particular provider's training policy, or that processing stays on the owner's device.</p>
+    <h2>Purpose and controls</h2>
+    <p>Google API information is used to provide the connected job-search, draft-management, resume-backup and outreach-tracking functions described here. The current deployment has no advertising or data-sale feature. The dashboard's Gmail workflow creates drafts for owner review; the underlying Google compose permission also permits sending.</p>
+    <p>The application must use and transfer information received from Google APIs in accordance with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. Publication of this notice is not a claim of Google verification or certification.</p>
+    <h2>Retention, removal and disconnection</h2>
+    <p>Records remain until removed by the operator or the relevant service's retention process. Replacing an evidence library removes superseded source content from active application storage, but historical generated outputs and version records can remain. Logout and assistant reset are not complete data-erasure operations.</p>
+    <p>The account owner can revoke the app's access in Google Account settings. Revocation stops future authorized Google API access; it does not automatically delete existing database records, Gmail drafts, Drive files, temporary copies, logs or backups. Removal of those copies requires separate operator or service actions.</p>
+    <h2>Contact and changes</h2>
+    <p>For access, removal or privacy questions, contact the support email shown on the app's Google consent screen. This notice must be reviewed when the application's data practices change and before offering a customer-facing service.</p>
+    <nav aria-label="Application information"><a href="./">Application information</a><a href="use.html">Use and limitations</a></nav>
+  </main>
+  <footer>Job Search Gmail Automation</footer>
+</body>
+</html>

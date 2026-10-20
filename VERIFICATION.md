@@ -1,5 +1,28 @@
 # Verification
 
+## October 20 UI Refresh
+
+- Static checks, JavaScript syntax and six interaction tests pass, including
+  accessible theme-action labels and tooltips.
+- Isolated browser checks pass at 1440, 768, 390 and 320px in both themes:
+  no page overflow, no broken images, text contrast, 7/3/4 project filtering,
+  keyboard disclosure, theme persistence, visible focus and no-script content.
+- A separate 200% text-size pass at 768/390/320px verifies no page or action
+  overlap. Independent review's narrow-screen button overlap was fixed and
+  rechecked. Project facts, metrics, limitations, links and contact data were
+  independently compared with the previous version.
+- Taste source lint reports no failures; its outline warning is the real
+  secondary button border. The browser taste inspector's media/motion/display
+  quotas are not accessibility requirements for this restrained static portfolio.
+  It also flags pixel-sparse text-only lower sections despite their readable
+  content and normal gaps. No stock imagery or filler was added to satisfy that
+  heuristic. Overflow, clipped content, contrast and assets were checked directly.
+- Project image and job-search-automation page hashes remain unchanged. Fresh
+  source fingerprints describe this reviewed version; live publication is
+  verified separately and recorded on the pull request.
+
+## Original Publication
+
 Prepublication checks for this static portfolio:
 
 - Two HTML pages passed asset, fragment, heading, canonical, metadata and public-content checks. Browser JavaScript passed Node's syntax check.

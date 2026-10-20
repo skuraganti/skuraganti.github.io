@@ -7,7 +7,7 @@
 <meta name="description" content="Sashank Kuraganti is a senior data engineer in Santa Clara, California, building data pipelines and lakehouse systems with Python, SQL and PySpark. Experience, skills and seven independent projects.">
 <link rel="canonical" href="https://skuraganti.github.io/">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f6f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#131417" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sashank Kuraganti · Senior Data Engineer">
@@ -37,18 +37,19 @@
 <header class="site-head">
   <nav class="nav wrap" aria-label="Primary">
     <a class="brand" href="#top" aria-label="Sashank Kuraganti, back to top">
-      <img src="assets/monogram.svg" alt="" width="32" height="32">
       <span>Sashank Kuraganti</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="theme-toggle" type="button" aria-pressed="false" hidden>
-      <span class="theme-icon" aria-hidden="true"></span><span class="theme-label">Dark theme</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun sun-icon" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon moon-icon" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg>
+      <span class="theme-label vh">Switch theme</span>
     </button>
   </nav>
 </header>
@@ -57,52 +58,22 @@
 
   <section class="hero wrap" aria-labelledby="hero-title">
     <div class="hero-text">
-      <p class="eyebrow">Senior Data Engineer · Santa Clara, California</p>
       <h1 id="hero-title">Sashank Kuraganti</h1>
+      <p class="hero-role">Senior Data Engineer · Santa Clara, California</p>
       <p class="lede">I build data pipelines and lakehouse systems with a clear path from raw data to the checks behind each result.</p>
       <p class="hero-links">
-        <a class="btn btn-primary" href="#work">See selected work</a>
+        <a class="btn btn-primary" href="#work">View work</a>
         <a class="btn" href="https://github.com/skuraganti">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/sashank-k-26aaa4173/">LinkedIn</a>
+        <a class="btn" href="#contact">Contact</a>
       </p>
     </div>
 
-    <figure class="flow" aria-labelledby="flow-cap">
-      <ol class="flow-steps">
-        <li class="flow-step">
-          <span class="flow-tag">01 · Source</span>
-          <strong>Land it as received</strong>
-          <span>Files, APIs and streams, kept raw and replayable.</span>
-        </li>
-        <li class="flow-step">
-          <span class="flow-tag">02 · Quality</span>
-          <strong>Check before trusting</strong>
-          <span>Schema, freshness and duplicate checks. Failing rows go to quarantine instead of disappearing.</span>
-          <span class="flow-branch">quarantine → review</span>
-        </li>
-        <li class="flow-step">
-          <span class="flow-tag">03 · Service</span>
-          <strong>Serve what passed</strong>
-          <span>Tables, search and dashboards with lineage back to the source.</span>
-        </li>
-      </ol>
-      <figcaption id="flow-cap"><span class="dot" aria-hidden="true"></span>How I approach a pipeline.</figcaption>
-    </figure>
-  </section>
-
-  <section class="band wrap" id="about" aria-labelledby="about-title">
-    <h2 id="about-title" class="section-title"><span class="num" aria-hidden="true">§1</span> About</h2>
-    <div class="prose">
-      <p>My work spans software, manufacturing, financial services and commerce. I use Python, SQL and PySpark most.</p>
-      <p>I care about data you can trace back to where it came from, and monitoring that tells you something useful. I also want to know where a system can fail.</p>
-      <p>The independent projects below take on the same problems with public data. They're personal work, separate from any employer, and the results are there for you to inspect.</p>
-    </div>
   </section>
 
   <section class="band wrap" id="work" aria-labelledby="work-title">
     <div class="work-head">
-      <h2 id="work-title" class="section-title"><span class="num" aria-hidden="true">§2</span> Selected work</h2>
-      <p class="work-note">Seven independent projects. Try a browser demo, or run the full app from its source. The apps run locally; optional model features may use a remote service.</p>
+      <h2 id="work-title" class="section-title">Selected work</h2>
+      <p class="work-note">Seven independent projects built with public data, from reliable ingestion to retrieval and AI evaluation.</p>
     </div>
 
     <div class="filter" role="group" aria-label="Filter projects" hidden>
@@ -118,8 +89,8 @@
 
       <li class="project feature" data-cat="data" id="relay">
         <div class="feature-text">
-          <p class="kind">Data pipeline · <span class="slug">data-pipeline-monitor</span></p>
           <h4>Relay</h4>
+          <p class="kind">Data pipeline · <span class="slug">data-pipeline-monitor</span></p>
           <p class="summary">Scheduled, bounded ingestion of NYC TLC trip data with a quality quarantine, lineage and checkpoint retry.</p>
           <dl class="facts">
             <div><dt>Source rows</dt><dd>56,551</dd></div>
@@ -139,15 +110,14 @@
           <p class="links"><a href="https://skuraganti.github.io/data-pipeline-monitor/">Demo<span class="vh"> of Relay</span></a><a href="https://github.com/skuraganti/data-pipeline-monitor">Source<span class="vh"> for Relay</span></a></p>
         </div>
         <figure class="shot">
-          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span><em>skuraganti.github.io/data-pipeline-monitor</em></div>
           <img src="assets/relay-demo.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Relay demo page showing source quality for the actual fixture: 56,549 accepted rows, 2 rejected, 6,640 warning rows and 56,551 source rows, next to lineage and the pinned source link.">
         </figure>
       </li>
 
       <li class="project feature flip" data-cat="ai" id="folio">
         <div class="feature-text">
-          <p class="kind">Retrieval · <span class="slug">private-ai-knowledge-engine</span></p>
           <h4>Folio</h4>
+          <p class="kind">Retrieval · <span class="slug">private-ai-knowledge-engine</span></p>
           <p class="summary">Document search with lexical, latent and hybrid retrieval, citation checks, and incremental updates and deletion. Evaluated on NIST documents.</p>
           <dl class="facts">
             <div><dt>Lexical Hit@5</dt><dd>20/24</dd></div>
@@ -166,15 +136,14 @@
           <p class="links"><a href="https://skuraganti.github.io/private-ai-knowledge-engine/">Demo<span class="vh"> of Folio</span></a><a href="https://github.com/skuraganti/private-ai-knowledge-engine">Source<span class="vh"> for Folio</span></a></p>
         </div>
         <figure class="shot">
-          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span><em>skuraganti.github.io/private-ai-knowledge-engine</em></div>
           <img src="assets/folio-demo.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Folio demo page titled Find the passage, showing an extractive answer from NIST documents in the browser.">
         </figure>
       </li>
 
       <li class="project feature" data-cat="ai" id="contour">
         <div class="feature-text">
-          <p class="kind">Code analysis · <span class="slug">ai-codebase-explorer</span></p>
           <h4>Contour</h4>
+          <p class="kind">Code analysis · <span class="slug">ai-codebase-explorer</span></p>
           <p class="summary">Parses Python and TypeScript, builds dependency graphs for Flask and Zod, and explains code with links back to the source lines.</p>
           <p class="stack">Python · TypeScript</p>
           <details>
@@ -188,7 +157,6 @@
           <p class="links"><a href="https://skuraganti.github.io/ai-codebase-explorer/">Demo<span class="vh"> of Contour</span></a><a href="https://github.com/skuraganti/ai-codebase-explorer">Source<span class="vh"> for Contour</span></a></p>
         </div>
         <figure class="shot">
-          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span><em>skuraganti.github.io/ai-codebase-explorer</em></div>
           <img src="assets/contour-demo.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Contour demo page titled Trace the dependency, showing a search over saved parsed output and an architecture map.">
         </figure>
       </li>
@@ -198,8 +166,8 @@
     <ol class="more" data-group-list="more">
 
       <li class="project row" data-cat="data" id="ledger">
-        <p class="kind">Data · <span class="slug">personal-spending-tracker</span></p>
         <h4>Ledger</h4>
+        <p class="kind">Data · <span class="slug">personal-spending-tracker</span></p>
         <p class="summary">Personal spending from CSV imports, with deterministic categories, recurring-payment candidates and budgets. No bank integration.</p>
         <p class="stack">Python · SQLite</p>
         <details>
@@ -214,8 +182,8 @@
       </li>
 
       <li class="project row" data-cat="data" id="fieldglass">
-        <p class="kind">Data · <span class="slug">live-earth-dashboard</span></p>
         <h4>Fieldglass</h4>
+        <p class="kind">Data · <span class="slug">live-earth-dashboard</span></p>
         <p class="summary">Ingests USGS and NWS data with deduplication, freshness tracking, watch-radius alerts and map playback.</p>
         <p class="stack">Python · SQLite · Leaflet</p>
         <details>
@@ -229,8 +197,8 @@
       </li>
 
       <li class="project row" data-cat="ai" id="tracelab">
-        <p class="kind">AI evaluation · <span class="slug">ai-agent-evaluation-lab</span></p>
         <h4>TraceLab</h4>
+        <p class="kind">AI evaluation · <span class="slug">ai-agent-evaluation-lab</span></p>
         <p class="summary">Tool-planning benchmarks derived from BFCL, with immutable trace checks, replays and synthetic fault probes.</p>
         <p class="stack">Python</p>
         <details>
@@ -245,8 +213,8 @@
       </li>
 
       <li class="project row" data-cat="ai" id="faultline">
-        <p class="kind">AI operations · <span class="slug">ai-incident-investigator</span></p>
         <h4>Faultline</h4>
+        <p class="kind">AI operations · <span class="slug">ai-incident-investigator</span></p>
         <p class="summary">Injects failures into a sandbox, measures HTTP, logs and spans, then writes cautious, cited hypotheses and repair proposals for a person to review.</p>
         <p class="stack">Python</p>
         <details>
@@ -262,8 +230,17 @@
     </ol>
   </section>
 
+  <section class="band wrap" id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title">About</h2>
+    <div class="prose">
+      <p>My work spans software, manufacturing, financial services and commerce. I use Python, SQL and PySpark most.</p>
+      <p>I care about data you can trace back to where it came from, and monitoring that tells you something useful. I also want to know where a system can fail.</p>
+      <p>The independent projects above take on the same problems with public data. They're personal work, separate from any employer, and the results are there for you to inspect.</p>
+    </div>
+  </section>
+
   <section class="band wrap" id="skills" aria-labelledby="skills-title">
-    <h2 id="skills-title" class="section-title"><span class="num" aria-hidden="true">§3</span> Skills</h2>
+    <h2 id="skills-title" class="section-title">Skills</h2>
     <div class="skills">
       <div><h3>Languages and processing</h3><p>Python, SQL, PySpark, Spark SQL</p></div>
       <div><h3>Lakehouse</h3><p>Databricks, Delta Lake, Delta Live Tables, Unity Catalog</p></div>
@@ -277,7 +254,7 @@
   </section>
 
   <section class="band wrap" id="experience" aria-labelledby="exp-title">
-    <h2 id="exp-title" class="section-title"><span class="num" aria-hidden="true">§4</span> Experience</h2>
+    <h2 id="exp-title" class="section-title">Experience</h2>
     <ol class="timeline">
       <li>
         <p class="when"><time datetime="2026-01">Jan 2026</time> – Present</p>
@@ -311,7 +288,7 @@
   </section>
 
   <section class="band wrap" id="education" aria-labelledby="edu-title">
-    <h2 id="edu-title" class="section-title"><span class="num" aria-hidden="true">§5</span> Education</h2>
+    <h2 id="edu-title" class="section-title">Education</h2>
     <ul class="edu">
       <li><h3>Master of Science in Data Science</h3><p>University of Central Oklahoma · <time datetime="2024-05">May 2024</time></p></li>
       <li><h3>Bachelor of Science in Business Analytics</h3><p>Manipal University · <time datetime="2020-04">April 2020</time></p></li>
@@ -319,9 +296,8 @@
   </section>
 
   <section class="band wrap" id="contact" aria-labelledby="contact-title">
-    <h2 id="contact-title" class="section-title"><span class="num" aria-hidden="true">§6</span> Contact</h2>
+    <h2 id="contact-title" class="section-title">Contact</h2>
     <article class="card" aria-labelledby="card-name">
-      <p class="card-ref">Directory · Contact</p>
       <h3 id="card-name">Sashank Kuraganti</h3>
       <p class="card-role">Senior Data Engineer · Santa Clara, California</p>
       <ul class="card-rows">

@@ -28,6 +28,8 @@
     function sync() {
       var dark = current() === "dark";
       btn.setAttribute("aria-pressed", dark ? "true" : "false");
+      btn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+      btn.setAttribute("title", dark ? "Switch to light theme" : "Switch to dark theme");
     }
     btn.addEventListener("click", function () {
       var next = current() === "dark" ? "light" : "dark";

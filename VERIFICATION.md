@@ -1,5 +1,28 @@
 # Verification
 
+## October 22 Width Repair
+
+- Increased the shared page cap from 76rem to 96rem. At 1920px, content now
+  begins at 224px instead of 372px; at 1440px, at 32px instead of 132px.
+  Phone/tablet gutters remain 20px. Paragraphs retain their 65ch reading limit.
+- The rendered regression fails on the previous layout and passes the repair.
+  It checks both themes at 320/390/768/1023/1024/1279/1280/1440/1920/2560px,
+  including wrapper width, both alternate-band edges and 200% text overflow.
+- Expanded independent checks pass at nine phone-to-ultrawide widths in both
+  themes, with working filters, keyboard disclosures, theme persistence,
+  intercepted demo-link navigation, visible focus and script-free content.
+  Text contrast and project image checks also pass. Link interception validates
+  navigation, not the availability or behavior of third-party destinations.
+- Enlarged-text testing exposed pre-existing nested experience/contact grid
+  overflow at 1024px. Experience rows now wrap by available space; the contact
+  panel stacks below 1280px. No clipping or reduced font size is used to hide it.
+- Static checks, JavaScript syntax, all six interaction unit tests and an
+  independent code review pass. HTML, application script, factual content,
+  project images, links and OAuth information pages remain unchanged.
+- This remains a dependency-free static site. Playwright is optional developer
+  tooling, not a new production dependency. Publication is checked separately
+  against the exact accepted source and GitHub Pages build.
+
 ## October 20 UI Refresh
 
 - Static checks, JavaScript syntax and six interaction tests pass, including

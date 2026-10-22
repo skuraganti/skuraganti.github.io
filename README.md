@@ -42,6 +42,14 @@ node --test tests/theme-filter.test.cjs
 
 These five checks run the actual browser script against DOM/storage fixtures. They cover denied storage, theme persistence/system fallback, filter counts and recoverable empty state. They complement rendered browser checks; they are not a screen-reader or full-browser audit.
 
+Optional rendered layout checks use the locally available Playwright runtime; no project dependency is added:
+
+```sh
+NODE_PATH=/path/to/existing/node_modules node tools/check_layout.cjs
+```
+
+Use a runtime with Playwright and Chromium already available. It checks both themes at 320, 390, 768, 1023, 1024, 1279, 1280, 1440, 1920, and 2560 pixels: gutters, both featured alternate-band boundaries, and horizontal overflow with normal and 200% text. Set `QA_URL` to check a deployed site; it blocks all origins other than that site's origin. Set `QA_OUTPUT=/tmp/portfolio-layout-qa` to save screenshots and a JSON report outside the repository.
+
 ## Publish
 
 Push these files to the root of the default branch of a public repository named `skuraganti.github.io`, then set Settings → Pages → Source to "Deploy from a branch", branch root. No Actions workflow is needed.
